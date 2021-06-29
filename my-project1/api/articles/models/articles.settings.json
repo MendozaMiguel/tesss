@@ -45,6 +45,17 @@
           "localized": true
         }
       }
+    },
+    "products": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "buy.products"
+      ]
     }
   }
 }

@@ -5,4 +5,16 @@
  * to customize this controller
  */
 
-module.exports = {};
+// ctx.request.body POST params in BODY
+// ctx.params GET/POST with params URL
+module.exports = {
+    /**
+     * show params.
+     *
+     * @return {Object}
+     */
+
+    onlyTitre: async ctx => {
+        return strapi.services.articles.onlytitre(ctx.params);
+    },
+};
