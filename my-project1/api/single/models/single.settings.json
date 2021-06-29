@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "singles",
+  "info": {
+    "name": "single",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "dynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "buy.products"
+      ]
+    }
+  }
+}
